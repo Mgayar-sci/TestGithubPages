@@ -52,13 +52,16 @@ class PlanetFilters {
             id="1"/>
         <PlanetFilter
             key="Terrestrial"
-            func={planet => planet.composition === 'terrestrial'} />
+            func={planet => planet.composition === 'terrestrial'}  
+            id="2"/>
         <PlanetFilter
             key="Gas Giant"
-            func={planet => planet.composition === 'gas giant'} />
+            func={planet => planet.composition === 'gas giant'}  
+            id="3"/>
         <PlanetFilter
             key="Ice Giant"
-            func={planet => planet.composition === 'ice giant'} />
+            func={planet => planet.composition === 'ice giant'}  
+            id="4"/>
       </p>
     );
   }
@@ -67,7 +70,6 @@ class PlanetFilters {
 class PlanetFilter {
   view(vnode) {
     const { key, func, id } = vnode.attrs;
-	console.log('hi');
     return (
       <label>
         <input type="radio" name="filter" id = {id}
