@@ -49,7 +49,7 @@ class PlanetFilters {
         <PlanetFilter
             key="All"
             func={planet => true} 
-            default = "true"/>
+            checked = "true"/>
         <PlanetFilter
             key="Terrestrial"
             func={planet => planet.composition === 'terrestrial'} />
