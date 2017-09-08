@@ -67,6 +67,7 @@ class PlanetFilters {
 class PlanetFilter {
   view(vnode) {
     const { key, func, checked } = vnode.attrs;
+	console.log('hi');
     return (
       <label>
         <input type="radio" name="filter" checked = {checked}
