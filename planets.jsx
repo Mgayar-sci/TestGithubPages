@@ -48,7 +48,8 @@ class PlanetFilters {
       <p>
         <PlanetFilter
             key="All"
-            func={planet => true} />
+            func={planet => true} 
+            default = "true"/>
         <PlanetFilter
             key="Terrestrial"
             func={planet => planet.composition === 'terrestrial'} />
@@ -65,10 +66,10 @@ class PlanetFilters {
 
 class PlanetFilter {
   view(vnode) {
-    const { key, func } = vnode.attrs;
+    const { key, func, checked } = vnode.attrs;
     return (
       <label>
-        <input type="radio" name="filter" 
+        <input type="radio" name="filter" checked = {checked}
                onchange={filterHandler(func)} /> {key}
       </label>
     );
