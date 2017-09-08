@@ -49,7 +49,7 @@ class PlanetFilters {
         <PlanetFilter
             key="All"
             func={planet => true} 
-            checked = "true"/>
+            id="1"/>
         <PlanetFilter
             key="Terrestrial"
             func={planet => planet.composition === 'terrestrial'} />
@@ -66,11 +66,11 @@ class PlanetFilters {
 
 class PlanetFilter {
   view(vnode) {
-    const { key, func, checked } = vnode.attrs;
+    const { key, func, id } = vnode.attrs;
 	console.log('hi');
     return (
       <label>
-        <input type="radio" name="filter" checked = {checked}
+        <input type="radio" name="filter" id = {id}
                onchange={filterHandler(func)} /> {key}
       </label>
     );
@@ -87,4 +87,4 @@ function filterHandler(filterFunction) {
 m.request({url: 'planets.json'}).then(data => {
   planets = data;
   m.mount(document.getElementById('app'), PlanetApp);
-});
+}).then(data=>{document.getElementById("1").checked = "true";console.log('hi');});
