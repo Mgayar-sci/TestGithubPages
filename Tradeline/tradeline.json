@@ -2,8 +2,7 @@
     "default": {
         "author": "CMS",
         "firstScene": "pond",
-        "sceneFadeDuration": 2000,
-		"hotSpotDebug" : "true"
+        "sceneFadeDuration": 2000
     },
     
     "scenes": {
@@ -15,19 +14,19 @@
                 "pitch": -21.957131944489664,
                 "yaw": 117.49152039070434,
                 "type": "info",
-                "text": "Product1"
+                "text": "Name: MacBook Air</br>Price: 18,800 L.E</br> Description: MacBook Air 11-inch Core i5 1.6GHz/4GB/128GB/Iris HD 6000"
               },
 			  {
                 "pitch": -25.017925429388666,
                 "yaw": 88.05555555555554,
                 "type": "info",
-                "text": "Product2"
+                "text": "Name: MacBook Air</br>Price: 18,800 L.E</br> Description: MacBook Air 11-inch Core i5 1.6GHz/4GB/128GB/Iris HD 6000"
               },
 			  {
                 "pitch": -22.040196441155025,
                 "yaw": 56.862959875844396,
                 "type": "info",
-                "text": "Product3"
+                "text": "Name: MacBook Air</br>Price: 18,800 L.E</br> Description: MacBook Air 11-inch Core i5 1.6GHz/4GB/128GB/Iris HD 6000"
               }
             ]
         }
