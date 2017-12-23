@@ -9,7 +9,7 @@
     "scenes": {
         "pond": {
             "title": "Tradeline store",
-            "panorama": "images/tradeline360.jpg",
+            "panorama": "images/Tradeline360.jpg",
             "hotSpots": [
               {
                 "pitch": -21.957131944489664,
