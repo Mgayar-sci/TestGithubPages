@@ -1,0 +1,35 @@
+﻿{
+    "default": {
+        "author": "CMS",
+        "firstScene": "pond",
+        "sceneFadeDuration": 2000,
+		"hotSpotDebug" : "true"
+    },
+    
+    "scenes": {
+        "pond": {
+            "title": "Tradeline store",
+            "panorama": "images/tradeline360.jpg",
+            "hotSpots": [
+              {
+                "pitch": -21.957131944489664,
+                "yaw": 117.49152039070434,
+                "type": "info",
+                "text": "Product1"
+              },
+			  {
+                "pitch": -25.017925429388666,
+                "yaw": 88.05555555555554,
+                "type": "info",
+                "text": "Product2"
+              },
+			  {
+                "pitch": -22.040196441155025,
+                "yaw": 56.862959875844396,
+                "type": "info",
+                "text": "Product3"
+              }
+            ]
+        }
+    }
+}
